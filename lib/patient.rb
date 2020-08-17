@@ -1,5 +1,9 @@
 class Patient 
+<<<<<<< HEAD
   attr_accessor :name, :appointment, :doctor
+=======
+   attr_accessor :name, :appointment, :doctor
+>>>>>>> d331ce9e606083950001304959cb8c16461607ac
   @@all = []
 
   def initialize(name)
@@ -20,6 +24,12 @@ class Patient
   end
 
   def new_appointment(doctor, date)
+<<<<<<< HEAD
     Appointment.new(doctor, self, date)
   end
+=======
+    Appointment.new(self, date, doctor)
+  end
+  
+>>>>>>> d331ce9e606083950001304959cb8c16461607ac
 end 
